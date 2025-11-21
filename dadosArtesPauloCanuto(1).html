@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[NOME DA OBRA] - Paulo Canuto</title>
+
+    <style>
+        /* 🎨 Reset Básico e Fundo Temático */
+        body {
+            font-family: 'Georgia', serif; /* Fonte Clássica e elegante */
+            margin: 0;
+            padding: 0;
+            color: #EAEAEA; /* Cinza claro/Quase branco */
+            background: linear-gradient(135deg, #1A1A1A 0%, #303030 100%); /* Fundo escuro sutil (Lounge/Noite) */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centraliza o conteúdo verticalmente */
+            align-items: center; /* Centraliza o conteúdo horizontalmente */
+        }
+
+        /* 🖼️ Contêiner Principal: "Quadro" */
+        .container {
+            max-width: 600px;
+            width: 90%;
+            padding: 40px;
+            /* 1. Cor de Fundo (Tela Pastel) */
+            background-color: #DAD8AB; /* Um tom de bege muito claro/creme (Quase Branco-Antigo), semelhante a uma tela de arte crua */
+
+            border-radius: 15px;
+            text-align: center;
+            /* 2. Moldura Marrom (Borda de Madeira) */
+            border: 15px solid #8B4513; /* Borda Marrom-Sela (SaddleBrown) para a moldura de madeira */
+            /* 3. Ajuste de Sombra (Opcional: Recomendado remover a sombra Lounge/Profunda) */
+            /* Removendo a sombra original para que não interfira na borda da moldura */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra mais sutil */
+        }
+
+        /* 👤 Nome do Artista e Título */
+        h1 {
+            font-family: 'Montserrat', sans-serif; /* Fonte geométrica para arquitetura */
+            font-size: 2.2em;
+            color: #062E21; /* Cor coral - Pôr do Sol */
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #FFD700; /* Linha dourada sutil */
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        h2 { /* Usado para o título da obra */
+            font-family: 'Playfair Display', serif; /* Fonte com serifa, artística */
+            font-size: 1.8em;
+            color: #062E21;
+            margin-top: 5px;
+            margin-bottom: 30px;
+        }
+
+        /* 💡 Detalhes da Obra */
+        .details-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 10px 0;
+            color: #062E21;
+        }
+
+        /* 💰 Preço */
+        .price {
+            font-family: 'Oswald', sans-serif; /* Fonte forte e moderna */
+            font-size: 1.5em;
+            color: #062E21;
+            margin: 20px 0;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Brilho sutil */
+        }
+
+        /* 🔗 Botões (Chamadas para Ação) */
+        .cta-section {
+            margin-top: 35px;
+        }
+
+            .cta-section a {
+                display: block;
+                text-decoration: none;
+                padding: 15px 30px;
+                margin: 15px 0;
+                border-radius: 5px;
+                font-weight: bold;
+                text-transform: uppercase;
+                transition: all 0.3s ease; /* Transição suave CSS3 */
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            }
+
+        /* Botão COMPRAR AGORA (Mercado Pago) */
+        .buy-button {
+            background: linear-gradient(90deg, #C98952 0%, #C98952 100%); /* Laranja ao Vermelho (Pôr do Sol) */
+            color: #B5EECB; /* Texto escuro no fundo claro */
+            border: none;
+        }
+
+            .buy-button:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 25px rgba(255, 99, 71, 0.6);
+                cursor: pointer;
+            }
+
+        /* Botão WhatsApp */
+        .whatsapp-button {
+            background-color: #25D366; /* Verde WhatsApp */
+            color: white;
+            border: 1px solid #128C7E;
+            font-size: 0.9em;
+        }
+
+            .whatsapp-button:hover {
+                background-color: #128C7E;
+                transform: translateY(-2px);
+                cursor: pointer;
+            }
+
+        /* 💡 Linha Divisória */
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), #FFD700, rgba(255, 255, 255, 0));
+            margin: 20px 0;
+            opacity: 0.5;
+        }
+
+        /* ℹ️ Observações */
+        .note {
+            font-size: 0.9em;
+            margin-top: 30px;
+            color: #708090; /* Cinza azulado (Cor do Farol/Mar) */
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>PAULO CANUTO</h1>
+
+        <h2 class="artwork-title">[Nome Da Obra]</h2>
+
+        <div class="divider"></div>
+
+        <div class="details-section">
+            <p><strong>Ano e Técnica:</strong> [AAAA, Técnica em Material]</p>
+            <p><strong>Dimensões:</strong> A x L</p>
+        </div>
+
+        <p class="price">R$ XXXX,XX</p>
+
+        <div class="divider"></div>
+
+        <div class="cta-section">
+            <a href="https://mpago.la/2DsWoNV" target="_blank" rel="external" class="buy-button">
+                **COMPRAR AGORA** (Pagamento Seguro via Mercado Pago)
+            </a>
+
+            <p class="note">Dúvidas ou negociação:</p>
+            <a href="https://wa.me/5571999837602?text=Ol%C3%A1%2C+tenho+interesse+na+obra+Nome+da+Obra." target="_blank" rel="external" class="whatsapp-button">
+                Chame o Artista no WhatsApp
+            </a>
+        </div>
+
+    </div>
+</body>
+</html>
